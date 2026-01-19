@@ -1,0 +1,36 @@
+2026-01-19T11:33:14.435+02:00  INFO 10764 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 10764 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
+2026-01-19T11:33:14.446+02:00  INFO 10764 --- [main] e.mihkel.veebipood.VeebipoodApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T11:33:16.778+02:00  INFO 10764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T11:33:16.899+02:00  INFO 10764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 4 JPA repository interfaces.
+2026-01-19T11:33:17.937+02:00  INFO 10764 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-19T11:33:17.964+02:00  INFO 10764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T11:33:17.965+02:00  INFO 10764 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19T11:33:18.071+02:00  INFO 10764 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3509 ms
+2026-01-19T11:33:18.379+02:00  INFO 10764 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T11:33:18.511+02:00  INFO 10764 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T11:33:19.466+02:00  INFO 10764 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T11:33:19.540+02:00  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T11:33:19.885+02:00  INFO 10764 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e489ac1
+2026-01-19T11:33:19.888+02:00  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T11:33:19.997+02:00  INFO 10764 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: shop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T11:33:21.779+02:00  INFO 10764 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T11:33:22.024+02:00  INFO 10764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:33:22.214+02:00  INFO 10764 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T11:33:22.922+02:00  WARN 10764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T11:33:23.006+02:00  INFO 10764 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T11:33:23.783+02:00  INFO 10764 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-19T11:33:23.795+02:00  INFO 10764 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 10.259 seconds (process running for 13.79)
+2026-01-19T11:33:59.604+02:00  INFO 10764 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T11:33:59.605+02:00  INFO 10764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T11:33:59.606+02:00  INFO 10764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,620 @@
+2026-01-19T09:35:53.993+02:00  INFO 9292 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 9292 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T09:35:53.999+02:00  INFO 9292 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T09:35:55.284+02:00  INFO 9292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T09:35:55.357+02:00  INFO 9292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2026-01-19T09:35:55.994+02:00  INFO 9292 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T09:35:56.131+02:00  INFO 9292 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T09:35:57.024+02:00  INFO 9292 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T09:35:57.081+02:00  INFO 9292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T09:35:57.354+02:00  INFO 9292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c06b1bc
+2026-01-19T09:35:57.356+02:00  INFO 9292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T09:35:57.509+02:00  INFO 9292 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T09:35:58.866+02:00  INFO 9292 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T09:35:59.021+02:00  INFO 9292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:35:59.201+02:00  INFO 9292 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T09:35:59.783+02:00  WARN 9292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T09:35:59.848+02:00  INFO 9292 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T09:36:00.649+02:00  INFO 9292 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.082 seconds (process running for 9.655)
+2026-01-19T09:36:01.179+02:00  INFO 9292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:36:01.183+02:00  INFO 9292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T09:36:01.189+02:00  INFO 9292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T09:51:29.926+02:00  INFO 12048 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 12048 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T09:51:29.929+02:00  INFO 12048 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T09:51:31.288+02:00  INFO 12048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T09:51:31.379+02:00  INFO 12048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2026-01-19T09:51:32.100+02:00  INFO 12048 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T09:51:32.219+02:00  INFO 12048 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T09:51:33.188+02:00  INFO 12048 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T09:51:33.230+02:00  INFO 12048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T09:51:33.485+02:00  INFO 12048 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53d808ea
+2026-01-19T09:51:33.488+02:00  INFO 12048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T09:51:33.609+02:00  INFO 12048 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T09:51:35.048+02:00  INFO 12048 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T09:51:35.171+02:00  INFO 12048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:51:35.351+02:00  INFO 12048 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T09:51:35.893+02:00  WARN 12048 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T09:51:35.954+02:00  INFO 12048 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T09:51:36.813+02:00  INFO 12048 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.403 seconds (process running for 9.662)
+2026-01-19T09:51:37.425+02:00  INFO 12048 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:51:37.429+02:00  INFO 12048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T09:51:37.434+02:00  INFO 12048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T09:52:43.774+02:00  INFO 27176 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 27176 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T09:52:43.777+02:00  INFO 27176 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T09:52:45.133+02:00  INFO 27176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T09:52:45.224+02:00  INFO 27176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2026-01-19T09:52:45.995+02:00  INFO 27176 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T09:52:46.103+02:00  INFO 27176 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T09:52:47.133+02:00  INFO 27176 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T09:52:47.185+02:00  INFO 27176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T09:52:47.468+02:00  INFO 27176 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53d808ea
+2026-01-19T09:52:47.472+02:00  INFO 27176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T09:52:47.604+02:00  INFO 27176 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T09:52:49.068+02:00  INFO 27176 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T09:52:49.189+02:00  INFO 27176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:52:49.377+02:00  INFO 27176 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T09:52:50.076+02:00  WARN 27176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T09:52:50.179+02:00  INFO 27176 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T09:52:51.261+02:00  INFO 27176 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.956 seconds (process running for 10.169)
+2026-01-19T09:52:51.846+02:00  INFO 27176 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:52:51.852+02:00  INFO 27176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T09:52:51.857+02:00  INFO 27176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T09:55:38.181+02:00  INFO 30108 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 30108 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T09:55:38.184+02:00  INFO 30108 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T09:55:39.584+02:00  INFO 30108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T09:55:39.683+02:00  INFO 30108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2026-01-19T09:55:40.420+02:00  INFO 30108 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T09:55:40.548+02:00  INFO 30108 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T09:55:41.634+02:00  INFO 30108 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T09:55:41.706+02:00  INFO 30108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T09:55:42.106+02:00  INFO 30108 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53d808ea
+2026-01-19T09:55:42.109+02:00  INFO 30108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T09:55:42.240+02:00  INFO 30108 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T09:55:43.910+02:00  INFO 30108 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T09:55:44.031+02:00  INFO 30108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:55:44.224+02:00  INFO 30108 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T09:55:44.862+02:00  WARN 30108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T09:55:44.930+02:00  INFO 30108 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T09:55:45.884+02:00  INFO 30108 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.231 seconds (process running for 10.676)
+2026-01-19T09:55:46.521+02:00  INFO 30108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T09:55:46.526+02:00  INFO 30108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T09:55:46.532+02:00  INFO 30108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:05:35.656+02:00  INFO 3268 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 3268 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:05:35.658+02:00  INFO 3268 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:05:37.197+02:00  INFO 3268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:05:37.286+02:00  INFO 3268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:05:37.970+02:00  INFO 3268 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:05:38.133+02:00  INFO 3268 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:05:39.281+02:00  INFO 3268 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:05:39.338+02:00  INFO 3268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:05:39.653+02:00  INFO 3268 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b90c5a5
+2026-01-19T10:05:39.656+02:00  INFO 3268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:05:39.785+02:00  INFO 3268 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:05:41.361+02:00  INFO 3268 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:05:41.486+02:00  INFO 3268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:05:41.688+02:00  INFO 3268 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:05:42.260+02:00  WARN 3268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:05:42.333+02:00  INFO 3268 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:05:43.261+02:00  INFO 3268 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.183 seconds (process running for 10.372)
+2026-01-19T10:05:43.988+02:00  INFO 3268 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:05:43.992+02:00  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:05:44.000+02:00  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:07:00.848+02:00  INFO 30200 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 30200 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:07:00.852+02:00  INFO 30200 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:07:02.151+02:00  INFO 30200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:07:02.244+02:00  INFO 30200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:07:02.897+02:00  INFO 30200 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:07:02.994+02:00  INFO 30200 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:07:03.912+02:00  INFO 30200 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:07:03.958+02:00  INFO 30200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:07:04.218+02:00  INFO 30200 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a16d393
+2026-01-19T10:07:04.221+02:00  INFO 30200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:07:04.336+02:00  INFO 30200 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:07:05.731+02:00  INFO 30200 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:07:05.843+02:00  INFO 30200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:07:06.022+02:00  INFO 30200 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:07:06.654+02:00  WARN 30200 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:07:06.730+02:00  INFO 30200 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:07:07.670+02:00  INFO 30200 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.309 seconds (process running for 9.406)
+2026-01-19T10:07:08.316+02:00  INFO 30200 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:07:08.320+02:00  INFO 30200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:07:08.326+02:00  INFO 30200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:09:09.529+02:00  INFO 13172 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 13172 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:09:09.531+02:00  INFO 13172 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:09:11.034+02:00  INFO 13172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:09:11.127+02:00  INFO 13172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:09:11.828+02:00  INFO 13172 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:09:11.951+02:00  INFO 13172 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:09:12.977+02:00  INFO 13172 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:09:13.027+02:00  INFO 13172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:09:13.344+02:00  INFO 13172 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ca86715
+2026-01-19T10:09:13.348+02:00  INFO 13172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:09:13.467+02:00  INFO 13172 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:09:15.071+02:00  INFO 13172 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:09:15.189+02:00  INFO 13172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:09:15.401+02:00  INFO 13172 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:09:16.076+02:00  WARN 13172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:09:16.142+02:00  INFO 13172 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:09:17.100+02:00  INFO 13172 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.069 seconds (process running for 10.592)
+2026-01-19T10:09:17.847+02:00  INFO 13172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:09:17.850+02:00  INFO 13172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:09:17.856+02:00  INFO 13172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:16:44.088+02:00  INFO 12372 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 12372 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:16:44.089+02:00  INFO 12372 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:16:45.519+02:00  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:16:45.601+02:00  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:16:46.410+02:00  INFO 12372 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:16:46.523+02:00  INFO 12372 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:16:47.494+02:00  INFO 12372 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:16:47.550+02:00  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:16:47.844+02:00  INFO 12372 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a116354
+2026-01-19T10:16:47.848+02:00  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:16:47.991+02:00  INFO 12372 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:16:49.453+02:00  INFO 12372 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:16:49.561+02:00  INFO 12372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:16:49.750+02:00  INFO 12372 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:16:50.422+02:00  WARN 12372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:16:50.484+02:00  INFO 12372 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:16:51.362+02:00  INFO 12372 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.765 seconds (process running for 9.884)
+2026-01-19T10:16:52.253+02:00  INFO 12372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:16:52.257+02:00  INFO 12372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:16:52.261+02:00  INFO 12372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:22:13.857+02:00  INFO 29028 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 29028 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:22:13.860+02:00  INFO 29028 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:22:15.108+02:00  INFO 29028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:22:15.179+02:00  INFO 29028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:22:15.864+02:00  INFO 29028 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:22:15.961+02:00  INFO 29028 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:22:16.905+02:00  INFO 29028 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:22:16.973+02:00  INFO 29028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:22:17.250+02:00  INFO 29028 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e18d2a2
+2026-01-19T10:22:17.252+02:00  INFO 29028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:22:17.361+02:00  INFO 29028 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:22:18.645+02:00  INFO 29028 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:22:18.749+02:00  INFO 29028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:22:18.909+02:00  INFO 29028 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:22:19.565+02:00  WARN 29028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:22:19.673+02:00  INFO 29028 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:22:20.803+02:00  INFO 29028 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.427 seconds (process running for 9.504)
+2026-01-19T10:22:21.647+02:00  INFO 29028 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:22:21.651+02:00  INFO 29028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:22:21.656+02:00  INFO 29028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:23:27.076+02:00  INFO 5740 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 5740 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:23:27.079+02:00  INFO 5740 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:23:28.419+02:00  INFO 5740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:23:28.501+02:00  INFO 5740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:23:29.189+02:00  INFO 5740 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:23:29.308+02:00  INFO 5740 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:23:30.337+02:00  INFO 5740 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:23:30.401+02:00  INFO 5740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:23:30.678+02:00  INFO 5740 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e18d2a2
+2026-01-19T10:23:30.681+02:00  INFO 5740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:23:30.787+02:00  INFO 5740 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:23:32.205+02:00  INFO 5740 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:23:32.309+02:00  INFO 5740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:23:32.489+02:00  INFO 5740 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:23:33.148+02:00  WARN 5740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:23:33.207+02:00  INFO 5740 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:23:34.069+02:00  INFO 5740 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.502 seconds (process running for 9.99)
+2026-01-19T10:23:35.131+02:00  INFO 5740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:23:35.136+02:00  INFO 5740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:23:35.144+02:00  INFO 5740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:24:41.083+02:00  INFO 18508 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 18508 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:24:41.086+02:00  INFO 18508 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:24:42.573+02:00  INFO 18508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:24:42.651+02:00  INFO 18508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:24:43.414+02:00  INFO 18508 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:24:43.544+02:00  INFO 18508 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:24:44.747+02:00  INFO 18508 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:24:44.794+02:00  INFO 18508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:24:45.069+02:00  INFO 18508 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ca0166c
+2026-01-19T10:24:45.072+02:00  INFO 18508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:24:45.220+02:00  INFO 18508 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:24:46.828+02:00  INFO 18508 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:24:46.947+02:00  INFO 18508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:24:47.160+02:00  INFO 18508 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:24:47.894+02:00  WARN 18508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:24:47.968+02:00  INFO 18508 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:24:48.922+02:00  INFO 18508 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.379 seconds (process running for 10.667)
+2026-01-19T10:24:49.894+02:00  INFO 18508 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:24:49.897+02:00  INFO 18508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:24:49.907+02:00  INFO 18508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:26:52.775+02:00  INFO 31108 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 31108 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:26:52.778+02:00  INFO 31108 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:26:54.211+02:00  INFO 31108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:26:54.304+02:00  INFO 31108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:26:55.104+02:00  INFO 31108 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:26:55.228+02:00  INFO 31108 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:26:56.203+02:00  INFO 31108 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:26:56.257+02:00  INFO 31108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:26:56.549+02:00  INFO 31108 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e18d2a2
+2026-01-19T10:26:56.553+02:00  INFO 31108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:26:56.682+02:00  INFO 31108 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:26:58.317+02:00  INFO 31108 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:26:58.427+02:00  INFO 31108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:26:58.624+02:00  INFO 31108 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:26:59.257+02:00  WARN 31108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:26:59.325+02:00  INFO 31108 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:27:00.247+02:00  INFO 31108 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.98 seconds (process running for 10.314)
+2026-01-19T10:27:01.238+02:00  INFO 31108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:27:01.241+02:00  INFO 31108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:27:01.247+02:00  INFO 31108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:30:43.899+02:00  INFO 31156 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 31156 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:30:43.903+02:00  INFO 31156 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:30:45.705+02:00  INFO 31156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:30:45.803+02:00  INFO 31156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:30:46.927+02:00  INFO 31156 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:30:47.121+02:00  INFO 31156 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:30:48.279+02:00  INFO 31156 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:30:48.339+02:00  INFO 31156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:30:48.691+02:00  INFO 31156 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@306c9b2c
+2026-01-19T10:30:48.695+02:00  INFO 31156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:30:48.850+02:00  INFO 31156 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:30:50.636+02:00  INFO 31156 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:30:50.773+02:00  INFO 31156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:30:51.036+02:00  INFO 31156 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:30:51.844+02:00  WARN 31156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:30:51.967+02:00  INFO 31156 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:30:53.147+02:00  INFO 31156 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 9.993 seconds (process running for 12.784)
+2026-01-19T10:30:54.166+02:00  INFO 31156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:30:54.172+02:00  INFO 31156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:30:54.177+02:00  INFO 31156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:33:47.889+02:00  INFO 13536 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 13536 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:33:47.892+02:00  INFO 13536 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:33:49.533+02:00  INFO 13536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:33:49.611+02:00  INFO 13536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:33:50.420+02:00  INFO 13536 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:33:50.538+02:00  INFO 13536 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:33:51.760+02:00  INFO 13536 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:33:51.823+02:00  INFO 13536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:33:52.102+02:00  INFO 13536 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e18d2a2
+2026-01-19T10:33:52.106+02:00  INFO 13536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:33:52.223+02:00  INFO 13536 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:33:53.682+02:00  INFO 13536 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:33:53.789+02:00  INFO 13536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:33:53.987+02:00  INFO 13536 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:33:54.630+02:00  WARN 13536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:33:54.699+02:00  INFO 13536 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:33:55.644+02:00  INFO 13536 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.391 seconds (process running for 10.86)
+2026-01-19T10:33:56.833+02:00  INFO 13536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:33:56.838+02:00  INFO 13536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:33:56.843+02:00  INFO 13536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:37:50.320+02:00  INFO 13152 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 13152 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:37:50.322+02:00  INFO 13152 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:37:51.544+02:00  INFO 13152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:37:51.611+02:00  INFO 13152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:37:52.256+02:00  INFO 13152 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:37:52.350+02:00  INFO 13152 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:37:53.286+02:00  INFO 13152 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:37:53.338+02:00  INFO 13152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:37:53.593+02:00  INFO 13152 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6bc62bb9
+2026-01-19T10:37:53.595+02:00  INFO 13152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:37:53.698+02:00  INFO 13152 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:37:54.944+02:00  INFO 13152 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:37:55.043+02:00  INFO 13152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:37:55.194+02:00  INFO 13152 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:37:55.669+02:00  WARN 13152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:37:55.725+02:00  INFO 13152 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:37:56.402+02:00  INFO 13152 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 6.516 seconds (process running for 8.71)
+2026-01-19T10:37:57.155+02:00  INFO 13152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:37:57.159+02:00  INFO 13152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:37:57.163+02:00  INFO 13152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:43:00.239+02:00  INFO 22564 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 22564 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:43:00.241+02:00  INFO 22564 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:43:01.711+02:00  INFO 22564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:43:01.798+02:00  INFO 22564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:43:02.483+02:00  INFO 22564 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:43:02.609+02:00  INFO 22564 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:43:03.701+02:00  INFO 22564 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:43:03.755+02:00  INFO 22564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:43:04.028+02:00  INFO 22564 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c6bf8d9
+2026-01-19T10:43:04.032+02:00  INFO 22564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:43:04.142+02:00  INFO 22564 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:43:05.944+02:00  INFO 22564 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:43:06.074+02:00  INFO 22564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:43:06.262+02:00  INFO 22564 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:43:07.131+02:00  WARN 22564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:43:07.213+02:00  INFO 22564 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:43:08.388+02:00  INFO 22564 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.71 seconds (process running for 11.148)
+2026-01-19T10:43:09.427+02:00  INFO 22564 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:43:09.431+02:00  INFO 22564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:43:09.437+02:00  INFO 22564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T10:43:53.073+02:00  INFO 28928 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 28928 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T10:43:53.075+02:00  INFO 28928 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T10:43:54.576+02:00  INFO 28928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T10:43:54.670+02:00  INFO 28928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2026-01-19T10:43:55.440+02:00  INFO 28928 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T10:43:55.567+02:00  INFO 28928 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T10:43:56.615+02:00  INFO 28928 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T10:43:56.690+02:00  INFO 28928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T10:43:57.017+02:00  INFO 28928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e18d2a2
+2026-01-19T10:43:57.020+02:00  INFO 28928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T10:43:57.136+02:00  INFO 28928 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T10:43:58.928+02:00  INFO 28928 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T10:43:59.045+02:00  INFO 28928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:43:59.243+02:00  INFO 28928 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T10:43:59.929+02:00  WARN 28928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T10:43:59.996+02:00  INFO 28928 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T10:44:01.029+02:00  INFO 28928 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 8.543 seconds (process running for 10.777)
+2026-01-19T10:44:01.910+02:00  INFO 28928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T10:44:01.916+02:00  INFO 28928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T10:44:01.921+02:00  INFO 28928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T11:04:02.550+02:00  INFO 18824 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 18824 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T11:04:02.552+02:00  INFO 18824 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T11:04:03.860+02:00  INFO 18824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T11:04:03.922+02:00  INFO 18824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2026-01-19T11:04:04.543+02:00  INFO 18824 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T11:04:04.645+02:00  INFO 18824 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T11:04:05.598+02:00  INFO 18824 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T11:04:05.642+02:00  INFO 18824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T11:04:05.910+02:00  INFO 18824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37fffef3
+2026-01-19T11:04:05.914+02:00  INFO 18824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T11:04:06.007+02:00  INFO 18824 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T11:04:07.328+02:00  INFO 18824 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T11:04:07.436+02:00  INFO 18824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:04:07.611+02:00  INFO 18824 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T11:04:08.203+02:00  WARN 18824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T11:04:08.263+02:00  INFO 18824 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T11:04:09.093+02:00  INFO 18824 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 6.984 seconds (process running for 9.403)
+2026-01-19T11:04:09.923+02:00  INFO 18824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:04:09.927+02:00  INFO 18824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T11:04:09.931+02:00  INFO 18824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T11:21:15.815+02:00  INFO 19968 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 19968 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T11:21:15.817+02:00  INFO 19968 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T11:21:17.055+02:00  INFO 19968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T11:21:17.129+02:00  INFO 19968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2026-01-19T11:21:17.786+02:00  INFO 19968 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T11:21:17.914+02:00  INFO 19968 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T11:21:18.920+02:00  INFO 19968 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T11:21:18.964+02:00  INFO 19968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T11:21:19.198+02:00  INFO 19968 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@795eddda
+2026-01-19T11:21:19.200+02:00  INFO 19968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T11:21:19.301+02:00  INFO 19968 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T11:21:20.619+02:00  INFO 19968 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T11:21:20.715+02:00  INFO 19968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:21:20.878+02:00  INFO 19968 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T11:21:21.461+02:00  WARN 19968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T11:21:21.516+02:00  INFO 19968 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T11:21:22.288+02:00  INFO 19968 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 6.905 seconds (process running for 9.224)
+2026-01-19T11:21:23.059+02:00  INFO 19968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:21:23.062+02:00  INFO 19968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T11:21:23.066+02:00  INFO 19968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-19T11:21:38.846+02:00  INFO 22904 --- [main] e.m.rendipood.service.RentalServiceTest  : Starting RentalServiceTest using Java 21.0.3 with PID 22904 (started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\rendipood)
+2026-01-19T11:21:38.848+02:00  INFO 22904 --- [main] e.m.rendipood.service.RentalServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T11:21:40.260+02:00  INFO 22904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T11:21:40.334+02:00  INFO 22904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2026-01-19T11:21:40.983+02:00  INFO 22904 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-19T11:21:41.064+02:00  INFO 22904 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-19T11:21:41.968+02:00  INFO 22904 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T11:21:42.020+02:00  INFO 22904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T11:21:42.302+02:00  INFO 22904 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@795eddda
+2026-01-19T11:21:42.305+02:00  INFO 22904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T11:21:42.412+02:00  INFO 22904 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/rentalshop]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.2
+	Default catalog/schema: rentalshop/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19T11:21:43.717+02:00  INFO 22904 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T11:21:43.818+02:00  INFO 22904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:21:43.972+02:00  INFO 22904 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19T11:21:44.571+02:00  WARN 22904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T11:21:44.627+02:00  INFO 22904 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-19T11:21:45.440+02:00  INFO 22904 --- [main] e.m.rendipood.service.RentalServiceTest  : Started RentalServiceTest in 7.082 seconds (process running for 9.287)
+2026-01-19T11:21:46.202+02:00  INFO 22904 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T11:21:46.206+02:00  INFO 22904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-19T11:21:46.210+02:00  INFO 22904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

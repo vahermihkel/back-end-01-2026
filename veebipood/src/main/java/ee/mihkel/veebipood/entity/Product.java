@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
 
 @Getter
 @Setter
@@ -17,7 +18,9 @@ public class Product {
     private Long id;
     private String name;
     private String description;
-    private Double price;
+    private Double price; // Double -> saab null väärtuseks panna (double ei saaks)
+//    @ColumnDefault("false")
+    private boolean active; // boolean -> ei saa null väärtuseks panna (Boolean ei saaks)
 
     // @ManyToMany     List<Category> categories
     // @OneToMany      List<Category> categories

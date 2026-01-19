@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 public class CategoryController {
 
     @Autowired
@@ -19,11 +20,12 @@ public class CategoryController {
     }
 
     @PostMapping("categories")
-    public Category addCategory(@RequestBody Category category){
+    public List<Category> addCategory(@RequestBody Category category){
         if (category.getId() != null) {
             throw new RuntimeException("Cannot add category with id");
         }
-        return categoryRepository.save(category);
+        categoryRepository.save(category);
+        return categoryRepository.findAll();
     }
 
     @DeleteMapping("categories/{id}")

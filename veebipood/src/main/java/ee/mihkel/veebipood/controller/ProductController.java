@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 public class ProductController {
 
     @Autowired
@@ -20,9 +21,18 @@ public class ProductController {
 //        return "Hello World";
 //    }
 
-    // localhost:8080/products
+    // localhost:8080/products?categoryId=1
     @GetMapping("products")
-    public List<Product> getProducts(){
+    public List<Product> getProducts(@RequestParam(required = false) Long categoryId) {
+        if (categoryId == null) {
+            return productRepository.findByActiveTrue();
+        } else {
+            return productRepository.findByActiveTrueAndCategory_Id(categoryId);
+        }
+    }
+
+    @GetMapping("products/admin")
+    public List<Product> getAdminProducts(){
         return productRepository.findAll();
     }
 
