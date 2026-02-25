@@ -24,7 +24,10 @@ public class Order {
 
     @ManyToOne
     private Person person;
+    private String parcelMachine;
 
-    @ManyToMany
-    private List<Product> products;
+    private PaymentState paymentState;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<OrderRow> orderRows;
 }

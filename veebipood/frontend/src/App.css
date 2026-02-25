@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -17,4 +17,30 @@
 
 .logo:active {
   transform: scale(98%);
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.icon:active {
+  transform: scale(98%);
+}
+
+.sort-active {
+  text-decoration: underline;
+  background-color: #b8b8b8;
 }

@@ -33,4 +33,9 @@ public class Product {
     // int --> 2.1miljardit
     // Long --> kõvasti suurem
     // double --> komakohaga
+
+    private String image;
+//    @ColumnDefault("0") <--- kui käima ei lähe, sest ta ei suuda varasematele väärtustele
+    // anda väärtust.
+    private int stock;
 }

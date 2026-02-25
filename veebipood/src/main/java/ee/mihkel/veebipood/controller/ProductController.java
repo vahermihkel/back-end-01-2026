@@ -3,6 +3,8 @@ package ee.mihkel.veebipood.controller;
 import ee.mihkel.veebipood.entity.Product;
 import ee.mihkel.veebipood.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -22,18 +24,18 @@ public class ProductController {
 //    }
 
     // localhost:8080/products?categoryId=1
-    @GetMapping("products")
-    public List<Product> getProducts(@RequestParam(required = false) Long categoryId) {
+    @GetMapping("products")   // pageable --> annab automaatselt ?page=0&size=10&sort=price,asc
+    public Page<Product> getProducts(@RequestParam(required = false) Long categoryId, Pageable pageable) {
         if (categoryId == null) {
-            return productRepository.findByActiveTrue();
+            return productRepository.findByActiveTrue(pageable);
         } else {
-            return productRepository.findByActiveTrueAndCategory_Id(categoryId);
+            return productRepository.findByActiveTrueAndCategory_Id(categoryId, pageable);
         }
     }
 
     @GetMapping("products/admin")
     public List<Product> getAdminProducts(){
-        return productRepository.findAll();
+        return productRepository.findByOrderById();
     }
 
     @PostMapping("products")

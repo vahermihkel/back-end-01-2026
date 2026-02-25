@@ -1,0 +1,27 @@
+.products {
+
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+
+.name {
+  width: 300px;
+}
+
+.price {
+  width: 80px;
+}
+
+.quantity {
+  width: 90px;
+}
+
+.total {
+  width: 100px;
+}
