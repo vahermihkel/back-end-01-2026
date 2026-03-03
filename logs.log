@@ -1,539 +1,112 @@
-2026-02-25T09:57:08.179+02:00  INFO 2684 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 2684 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T09:57:08.188+02:00  INFO 2684 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T09:57:10.232+02:00  INFO 2684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T09:57:10.315+02:00  INFO 2684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
-2026-02-25T09:57:10.993+02:00  INFO 2684 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T09:57:11.022+02:00  INFO 2684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T09:57:11.023+02:00  INFO 2684 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T09:57:11.090+02:00  INFO 2684 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2828 ms
-2026-02-25T09:57:11.251+02:00  INFO 2684 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T09:57:11.357+02:00  INFO 2684 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T09:57:12.039+02:00  INFO 2684 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T09:57:12.092+02:00  INFO 2684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T09:57:12.444+02:00  INFO 2684 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d68be4f
-2026-02-25T09:57:12.447+02:00  INFO 2684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T09:57:12.619+02:00  INFO 2684 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
+2026-03-03T09:40:32.827+02:00  INFO 18048 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 18048 (C:\Users\Admin\koolitused\back-end-01-2026\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026)
+2026-03-03T09:40:32.833+02:00  INFO 18048 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "prod"
+2026-03-03T09:40:35.136+02:00  INFO 18048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T09:40:35.216+02:00  INFO 18048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2026-03-03T09:40:36.142+02:00  INFO 18048 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-03T09:40:36.160+02:00  INFO 18048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-03T09:40:36.160+02:00  INFO 18048 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-03T09:40:36.239+02:00  INFO 18048 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3328 ms
+2026-03-03T09:40:36.425+02:00  INFO 18048 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T09:40:36.528+02:00  INFO 18048 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-03T09:40:37.232+02:00  INFO 18048 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T09:40:37.281+02:00  INFO 18048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T09:40:38.509+02:00  INFO 18048 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@666b1244
+2026-03-03T09:40:38.514+02:00  INFO 18048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T09:40:39.250+02:00  INFO 18048 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://dpg-d6j8tj94tr6s739akkf0-a.frankfurt-postgres.render.com/veebipood_01_26]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
+	Database version: 18.3
+	Default catalog/schema: veebipood_01_26/public
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-25T09:57:14.315+02:00  INFO 2684 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T09:57:14.539+02:00  INFO 2684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T09:57:14.653+02:00  INFO 2684 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T09:57:15.333+02:00  WARN 2684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T09:57:15.471+02:00  WARN 2684 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-03-03T09:40:40.822+02:00  INFO 18048 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T09:40:41.789+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : HHH000247: ErrorCode: 0, SQLState: 00000
+2026-03-03T09:40:41.790+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : constraint "uk83uplx9pk5xbms2n3lps2r1bk" of relation "orders_order_rows" does not exist, skipping
+2026-03-03T09:40:41.887+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : HHH000247: ErrorCode: 0, SQLState: 00000
+2026-03-03T09:40:41.888+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : constraint "ukfwmwi44u55bo4rvwsv0cln012" of relation "person" does not exist, skipping
+2026-03-03T09:40:41.985+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : HHH000247: ErrorCode: 0, SQLState: 00000
+2026-03-03T09:40:41.985+02:00  WARN 18048 --- [main] org.hibernate.orm.jdbc.warn              : constraint "uko8tnkglv9n1eeqmo7de7em37n" of relation "person" does not exist, skipping
+2026-03-03T09:40:42.331+02:00  INFO 18048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T09:40:42.428+02:00  INFO 18048 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T09:40:42.928+02:00  WARN 18048 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierController': Unsatisfied dependency expressed through field 'emailService': Error creating bean with name 'emailService' defined in file [C:\Users\Admin\koolitused\back-end-01-2026\target\classes\ee\mihkel\veebipood\service\EmailService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.mail.javamail.JavaMailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-03-03T09:40:42.928+02:00  INFO 18048 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T09:40:42.930+02:00  INFO 18048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T09:40:43.548+02:00  INFO 18048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T09:40:43.551+02:00  INFO 18048 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-03-03T09:40:43.561+02:00  INFO 18048 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
-Using generated security password: ac685774-7ae3-4079-8e00-f5ca284d94e4
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-03T09:40:43.579+02:00 ERROR 18048 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
+***************************
+APPLICATION FAILED TO START
+***************************
 
-2026-02-25T09:57:15.486+02:00  INFO 2684 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T09:57:15.879+02:00  INFO 2684 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T09:57:16.477+02:00  INFO 2684 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T09:57:16.477+02:00  INFO 2684 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39384ba6]]
-2026-02-25T09:57:16.479+02:00  INFO 2684 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T09:57:16.501+02:00  INFO 2684 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T09:57:16.508+02:00  INFO 2684 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 8.94 seconds (process running for 12.165)
-2026-02-25T09:58:16.465+02:00  INFO 2684 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
-2026-02-25T10:28:16.467+02:00  INFO 2684 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
-2026-02-25T10:29:59.407+02:00  INFO 2684 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T10:29:59.420+02:00  INFO 2684 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T10:29:59.423+02:00  INFO 2684 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T10:29:59.424+02:00  INFO 2684 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@39384ba6]]
-2026-02-25T10:29:59.424+02:00  INFO 2684 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T10:29:59.430+02:00  INFO 2684 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T10:29:59.433+02:00  INFO 2684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T10:29:59.437+02:00  INFO 2684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T10:30:13.841+02:00  INFO 11964 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 11964 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T10:30:13.844+02:00  INFO 11964 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T10:30:15.669+02:00  INFO 11964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T10:30:15.741+02:00  INFO 11964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
-2026-02-25T10:30:16.282+02:00  INFO 11964 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T10:30:16.295+02:00  INFO 11964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T10:30:16.295+02:00  INFO 11964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T10:30:16.358+02:00  INFO 11964 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2454 ms
-2026-02-25T10:30:16.500+02:00  INFO 11964 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T10:30:16.557+02:00  INFO 11964 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T10:30:17.066+02:00  INFO 11964 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T10:30:17.119+02:00  INFO 11964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T10:30:17.332+02:00  INFO 11964 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14d298d6
-2026-02-25T10:30:17.334+02:00  INFO 11964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T10:30:17.423+02:00  INFO 11964 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
+Description:
+
+Parameter 0 of constructor in ee.mihkel.veebipood.service.EmailService required a bean of type 'org.springframework.mail.javamail.JavaMailSender' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.mail.javamail.JavaMailSender' in your configuration.
+
+2026-03-03T09:41:24.154+02:00  INFO 1932 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 1932 (C:\Users\Admin\koolitused\back-end-01-2026\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026)
+2026-03-03T09:41:24.159+02:00  INFO 1932 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "prod"
+2026-03-03T09:41:25.265+02:00  INFO 1932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T09:41:25.331+02:00  INFO 1932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2026-03-03T09:41:26.023+02:00  INFO 1932 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-03T09:41:26.039+02:00  INFO 1932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-03T09:41:26.040+02:00  INFO 1932 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-03T09:41:26.096+02:00  INFO 1932 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1867 ms
+2026-03-03T09:41:26.229+02:00  INFO 1932 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T09:41:26.293+02:00  INFO 1932 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-03T09:41:26.804+02:00  INFO 1932 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T09:41:26.836+02:00  INFO 1932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T09:41:27.941+02:00  INFO 1932 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31fc658f
+2026-03-03T09:41:27.942+02:00  INFO 1932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T09:41:28.308+02:00  INFO 1932 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://dpg-d6j8tj94tr6s739akkf0-a.frankfurt-postgres.render.com/veebipood_01_26]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
+	Database version: 18.3
+	Default catalog/schema: veebipood_01_26/public
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-25T10:30:18.620+02:00  INFO 11964 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T10:30:18.769+02:00  INFO 11964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T10:30:18.843+02:00  INFO 11964 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T10:30:19.306+02:00  WARN 11964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T10:30:19.408+02:00  WARN 11964 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-03-03T09:41:29.433+02:00  INFO 1932 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T09:41:29.929+02:00  INFO 1932 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T09:41:29.992+02:00  INFO 1932 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T09:41:30.607+02:00  WARN 1932 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T09:41:30.725+02:00  WARN 1932 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: c0727b25-ad64-49a0-89b3-9217432d2950
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T10:30:19.418+02:00  INFO 11964 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T10:30:19.686+02:00  INFO 11964 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T10:30:20.148+02:00  INFO 11964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T10:30:20.149+02:00  INFO 11964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3443732a]]
-2026-02-25T10:30:20.149+02:00  INFO 11964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T10:30:20.168+02:00  INFO 11964 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T10:30:20.177+02:00  INFO 11964 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 6.821 seconds (process running for 9.096)
-2026-02-25T10:30:42.344+02:00  INFO 11964 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T10:30:42.354+02:00  INFO 11964 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T10:30:42.357+02:00  INFO 11964 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T10:30:42.357+02:00  INFO 11964 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3443732a]]
-2026-02-25T10:30:42.357+02:00  INFO 11964 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T10:30:42.363+02:00  INFO 11964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T10:30:42.366+02:00  INFO 11964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T10:30:42.368+02:00  INFO 11964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T10:36:43.494+02:00  INFO 12044 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 12044 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T10:36:43.498+02:00  INFO 12044 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T10:36:44.428+02:00  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T10:36:44.521+02:00  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
-2026-02-25T10:36:45.102+02:00  INFO 12044 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T10:36:45.118+02:00  INFO 12044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T10:36:45.119+02:00  INFO 12044 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T10:36:45.181+02:00  INFO 12044 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1628 ms
-2026-02-25T10:36:45.323+02:00  INFO 12044 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T10:36:45.388+02:00  INFO 12044 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T10:36:45.901+02:00  INFO 12044 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T10:36:45.934+02:00  INFO 12044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T10:36:46.087+02:00  INFO 12044 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19fc0ef7
-2026-02-25T10:36:46.089+02:00  INFO 12044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T10:36:46.171+02:00  INFO 12044 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T10:36:47.292+02:00  INFO 12044 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T10:36:47.404+02:00  INFO 12044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T10:36:47.486+02:00  INFO 12044 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T10:36:47.992+02:00  WARN 12044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T10:36:48.084+02:00  WARN 12044 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 99ea2d11-a55e-4dad-a9db-aeab764fe007
+Using generated security password: 5f8f37cc-e9bf-42e4-a530-e101b4e696e4
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-02-25T10:36:48.096+02:00  INFO 12044 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T10:36:48.339+02:00  INFO 12044 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T10:36:48.815+02:00  INFO 12044 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T10:36:48.816+02:00  INFO 12044 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@76e14208]]
-2026-02-25T10:36:48.817+02:00  INFO 12044 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T10:36:48.836+02:00  INFO 12044 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T10:36:48.844+02:00  INFO 12044 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.88 seconds (process running for 6.726)
-2026-02-25T10:37:48.806+02:00  INFO 12044 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 16, active threads = 1, queued tasks = 2, completed tasks = 49]
-2026-02-25T11:07:48.807+02:00  INFO 12044 --- [MessageBroker-6] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 16, active threads = 1, queued tasks = 2, completed tasks = 61]
-2026-02-25T11:29:43.306+02:00  INFO 12044 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T11:29:43.314+02:00  INFO 12044 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T11:29:43.318+02:00  INFO 12044 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T11:29:43.319+02:00  INFO 12044 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@76e14208]]
-2026-02-25T11:29:43.319+02:00  INFO 12044 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T11:29:43.325+02:00  INFO 12044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:29:43.328+02:00  INFO 12044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T11:29:43.330+02:00  INFO 12044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T11:29:54.231+02:00  INFO 23080 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 23080 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T11:29:54.236+02:00  INFO 23080 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T11:29:55.380+02:00  INFO 23080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T11:29:55.449+02:00  INFO 23080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
-2026-02-25T11:29:55.916+02:00  INFO 23080 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T11:29:55.941+02:00  INFO 23080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T11:29:55.941+02:00  INFO 23080 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T11:29:55.994+02:00  INFO 23080 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1694 ms
-2026-02-25T11:29:56.111+02:00  INFO 23080 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T11:29:56.160+02:00  INFO 23080 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T11:29:56.588+02:00  INFO 23080 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T11:29:56.622+02:00  INFO 23080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T11:29:56.762+02:00  INFO 23080 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f1fb139
-2026-02-25T11:29:56.765+02:00  INFO 23080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T11:29:56.830+02:00  INFO 23080 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T11:29:57.833+02:00  INFO 23080 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T11:29:57.914+02:00  INFO 23080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:29:57.980+02:00  INFO 23080 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T11:29:58.426+02:00  WARN 23080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T11:29:58.506+02:00  WARN 23080 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-03-03T09:41:30.737+02:00  INFO 1932 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-03T09:41:31.058+02:00  INFO 1932 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-03T09:41:31.664+02:00  INFO 1932 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-03-03T09:41:31.666+02:00  INFO 1932 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@22bf2a0d]]
+2026-03-03T09:41:31.667+02:00  INFO 1932 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-03-03T09:41:31.689+02:00  INFO 1932 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-03T09:41:31.700+02:00  INFO 1932 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 8.132 seconds (process running for 9.13)
+2026-03-03T09:42:31.646+02:00  INFO 1932 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
+2026-03-03T09:45:28.802+02:00  INFO 1932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T09:45:28.802+02:00  INFO 1932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T09:45:28.804+02:00  INFO 1932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-03T09:45:29.462+02:00  WARN 1932 --- [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
-Using generated security password: f68dba3d-00e1-4c56-8452-5dabff60de24
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T11:29:58.514+02:00  INFO 23080 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T11:29:58.708+02:00  INFO 23080 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T11:29:59.312+02:00  INFO 23080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T11:29:59.312+02:00  INFO 23080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@30a0a440]]
-2026-02-25T11:29:59.314+02:00  INFO 23080 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T11:29:59.330+02:00  INFO 23080 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T11:29:59.341+02:00  INFO 23080 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.726 seconds (process running for 6.536)
-2026-02-25T11:30:54.283+02:00  INFO 23080 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T11:30:54.284+02:00  INFO 23080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T11:30:54.287+02:00  INFO 23080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-02-25T11:30:59.299+02:00  INFO 23080 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T11:36:32.329+02:00  INFO 23080 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T11:36:32.338+02:00  INFO 23080 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T11:36:32.340+02:00  INFO 23080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T11:36:32.340+02:00  INFO 23080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@30a0a440]]
-2026-02-25T11:36:32.342+02:00  INFO 23080 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T11:36:32.347+02:00  INFO 23080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:36:32.349+02:00  INFO 23080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T11:36:32.351+02:00  INFO 23080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T11:36:37.216+02:00  INFO 23160 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 23160 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T11:36:37.219+02:00  INFO 23160 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T11:36:38.209+02:00  INFO 23160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T11:36:38.270+02:00  INFO 23160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
-2026-02-25T11:36:38.856+02:00  INFO 23160 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T11:36:38.868+02:00  INFO 23160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T11:36:38.868+02:00  INFO 23160 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T11:36:38.924+02:00  INFO 23160 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1653 ms
-2026-02-25T11:36:39.077+02:00  INFO 23160 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T11:36:39.138+02:00  INFO 23160 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T11:36:39.640+02:00  INFO 23160 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T11:36:39.676+02:00  INFO 23160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T11:36:39.858+02:00  INFO 23160 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7057dbda
-2026-02-25T11:36:39.860+02:00  INFO 23160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T11:36:39.932+02:00  INFO 23160 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T11:36:40.992+02:00  INFO 23160 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T11:36:41.082+02:00  INFO 23160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:36:41.150+02:00  INFO 23160 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T11:36:41.623+02:00  WARN 23160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T11:36:41.701+02:00  WARN 23160 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 4bde9bf9-2fb8-4e5e-acaa-0af673a804ed
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T11:36:41.710+02:00  INFO 23160 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T11:36:41.916+02:00  INFO 23160 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T11:36:42.381+02:00  INFO 23160 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T11:36:42.382+02:00  INFO 23160 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@30a0a440]]
-2026-02-25T11:36:42.382+02:00  INFO 23160 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T11:36:42.399+02:00  INFO 23160 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T11:36:42.409+02:00  INFO 23160 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.702 seconds (process running for 6.506)
-2026-02-25T11:37:21.991+02:00  INFO 23160 --- [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T11:37:21.992+02:00  INFO 23160 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T11:37:21.996+02:00  INFO 23160 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-02-25T11:37:42.373+02:00  INFO 23160 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T11:38:55.482+02:00  INFO 23160 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T11:38:55.491+02:00  INFO 23160 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T11:38:55.493+02:00  INFO 23160 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T11:38:55.494+02:00  INFO 23160 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@30a0a440]]
-2026-02-25T11:38:55.494+02:00  INFO 23160 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T11:38:55.501+02:00  INFO 23160 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:38:55.504+02:00  INFO 23160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T11:38:55.508+02:00  INFO 23160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T11:39:00.415+02:00  INFO 21576 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 21576 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T11:39:00.420+02:00  INFO 21576 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T11:39:01.338+02:00  INFO 21576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T11:39:01.412+02:00  INFO 21576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
-2026-02-25T11:39:02.010+02:00  INFO 21576 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T11:39:02.028+02:00  INFO 21576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T11:39:02.028+02:00  INFO 21576 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T11:39:02.100+02:00  INFO 21576 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1624 ms
-2026-02-25T11:39:02.250+02:00  INFO 21576 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T11:39:02.307+02:00  INFO 21576 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T11:39:02.796+02:00  INFO 21576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T11:39:02.834+02:00  INFO 21576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T11:39:02.987+02:00  INFO 21576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7057dbda
-2026-02-25T11:39:02.990+02:00  INFO 21576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T11:39:03.065+02:00  INFO 21576 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T11:39:04.135+02:00  INFO 21576 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T11:39:04.225+02:00  INFO 21576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T11:39:04.289+02:00  INFO 21576 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T11:39:04.759+02:00  WARN 21576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T11:39:04.844+02:00  WARN 21576 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 8d9bff5c-ef52-494d-8661-6ffdf97aea17
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T11:39:04.852+02:00  INFO 21576 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T11:39:05.094+02:00  INFO 21576 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T11:39:05.589+02:00  INFO 21576 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T11:39:05.591+02:00  INFO 21576 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@116c43d4]]
-2026-02-25T11:39:05.592+02:00  INFO 21576 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T11:39:05.613+02:00  INFO 21576 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T11:39:05.628+02:00  INFO 21576 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.762 seconds (process running for 6.674)
-2026-02-25T11:39:13.021+02:00  INFO 21576 --- [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T11:39:13.022+02:00  INFO 21576 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T11:39:13.023+02:00  INFO 21576 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-02-25T11:40:05.576+02:00  INFO 21576 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T12:10:05.582+02:00  INFO 21576 --- [MessageBroker-3] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 6, active threads = 1, queued tasks = 3, completed tasks = 2]
-2026-02-25T12:20:17.648+02:00  INFO 21576 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T12:20:17.660+02:00  INFO 21576 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T12:20:17.663+02:00  INFO 21576 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T12:20:17.663+02:00  INFO 21576 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@116c43d4]]
-2026-02-25T12:20:17.663+02:00  INFO 21576 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T12:20:17.670+02:00  INFO 21576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:20:17.676+02:00  INFO 21576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T12:20:17.679+02:00  INFO 21576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T12:20:29.845+02:00  INFO 11272 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 11272 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T12:20:29.848+02:00  INFO 11272 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T12:20:31.234+02:00  INFO 11272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T12:20:31.313+02:00  INFO 11272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
-2026-02-25T12:20:31.900+02:00  INFO 11272 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T12:20:31.916+02:00  INFO 11272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T12:20:31.916+02:00  INFO 11272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T12:20:31.977+02:00  INFO 11272 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2063 ms
-2026-02-25T12:20:32.108+02:00  INFO 11272 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T12:20:32.176+02:00  INFO 11272 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T12:20:32.756+02:00  INFO 11272 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T12:20:32.790+02:00  INFO 11272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T12:20:32.945+02:00  INFO 11272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3faa55
-2026-02-25T12:20:32.947+02:00  INFO 11272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T12:20:33.026+02:00  INFO 11272 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T12:20:34.132+02:00  INFO 11272 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T12:20:34.223+02:00  INFO 11272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:20:34.295+02:00  INFO 11272 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T12:20:34.820+02:00  WARN 11272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T12:20:34.911+02:00  WARN 11272 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: ee76d703-5856-4164-8148-5e5ccb2eb7db
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T12:20:34.921+02:00  INFO 11272 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T12:20:35.117+02:00  INFO 11272 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T12:20:35.587+02:00  INFO 11272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T12:20:35.587+02:00  INFO 11272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5faa0c51]]
-2026-02-25T12:20:35.588+02:00  INFO 11272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T12:20:35.607+02:00  INFO 11272 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T12:20:35.617+02:00  INFO 11272 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 6.4 seconds (process running for 7.439)
-2026-02-25T12:21:35.578+02:00  INFO 11272 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T12:21:50.911+02:00  INFO 11272 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T12:21:50.919+02:00  INFO 11272 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T12:21:50.924+02:00  INFO 11272 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T12:21:50.924+02:00  INFO 11272 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5faa0c51]]
-2026-02-25T12:21:50.924+02:00  INFO 11272 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T12:21:50.932+02:00  INFO 11272 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:21:50.934+02:00  INFO 11272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T12:21:50.937+02:00  INFO 11272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T12:21:53.470+02:00  INFO 11064 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 11064 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T12:21:53.474+02:00  INFO 11064 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T12:21:54.433+02:00  INFO 11064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T12:21:54.490+02:00  INFO 11064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
-2026-02-25T12:21:55.059+02:00  INFO 11064 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T12:21:55.072+02:00  INFO 11064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T12:21:55.073+02:00  INFO 11064 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T12:21:55.123+02:00  INFO 11064 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1589 ms
-2026-02-25T12:21:55.253+02:00  INFO 11064 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T12:21:55.310+02:00  INFO 11064 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T12:21:55.771+02:00  INFO 11064 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T12:21:55.802+02:00  INFO 11064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T12:21:56.023+02:00  INFO 11064 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a8e30e3
-2026-02-25T12:21:56.027+02:00  INFO 11064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T12:21:56.127+02:00  INFO 11064 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T12:21:57.691+02:00  INFO 11064 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T12:21:57.814+02:00  INFO 11064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:21:57.926+02:00  INFO 11064 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T12:21:58.660+02:00  WARN 11064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T12:21:58.787+02:00  WARN 11064 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 14e0e0b2-3543-419e-92b0-72b071792158
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T12:21:58.798+02:00  INFO 11064 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T12:21:59.122+02:00  INFO 11064 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T12:21:59.796+02:00  INFO 11064 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T12:21:59.799+02:00  INFO 11064 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@66f62b8c]]
-2026-02-25T12:21:59.801+02:00  INFO 11064 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T12:21:59.826+02:00  INFO 11064 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T12:21:59.840+02:00  INFO 11064 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 6.919 seconds (process running for 7.853)
-2026-02-25T12:22:02.572+02:00  INFO 11064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T12:22:02.572+02:00  INFO 11064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T12:22:02.574+02:00  INFO 11064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-02-25T12:22:31.366+02:00  INFO 11064 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T12:22:31.374+02:00  INFO 11064 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T12:22:31.376+02:00  INFO 11064 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T12:22:31.377+02:00  INFO 11064 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@66f62b8c]]
-2026-02-25T12:22:31.377+02:00  INFO 11064 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T12:22:31.382+02:00  INFO 11064 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:22:31.385+02:00  INFO 11064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T12:22:31.388+02:00  INFO 11064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T12:22:36.415+02:00  INFO 22496 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 22496 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T12:22:36.419+02:00  INFO 22496 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T12:22:37.402+02:00  INFO 22496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T12:22:37.464+02:00  INFO 22496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
-2026-02-25T12:22:38.019+02:00  INFO 22496 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T12:22:38.034+02:00  INFO 22496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T12:22:38.035+02:00  INFO 22496 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T12:22:38.086+02:00  INFO 22496 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1608 ms
-2026-02-25T12:22:38.233+02:00  INFO 22496 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T12:22:38.291+02:00  INFO 22496 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T12:22:38.754+02:00  INFO 22496 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T12:22:38.792+02:00  INFO 22496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T12:22:38.947+02:00  INFO 22496 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a8e30e3
-2026-02-25T12:22:38.950+02:00  INFO 22496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T12:22:39.025+02:00  INFO 22496 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T12:22:40.088+02:00  INFO 22496 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T12:22:40.179+02:00  INFO 22496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:22:40.250+02:00  INFO 22496 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T12:22:40.742+02:00  WARN 22496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T12:22:40.817+02:00  WARN 22496 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 883a1957-1987-4ac5-9d1c-2e17073e9ff4
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T12:22:40.828+02:00  INFO 22496 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T12:22:41.016+02:00  INFO 22496 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T12:22:41.437+02:00  INFO 22496 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T12:22:41.438+02:00  INFO 22496 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@78f18a87]]
-2026-02-25T12:22:41.439+02:00  INFO 22496 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T12:22:41.458+02:00  INFO 22496 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T12:22:41.467+02:00  INFO 22496 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.627 seconds (process running for 6.54)
-2026-02-25T12:23:17.991+02:00  INFO 22496 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T12:23:17.992+02:00  INFO 22496 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T12:23:17.994+02:00  INFO 22496 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-02-25T12:23:41.429+02:00  INFO 22496 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T12:32:31.320+02:00  INFO 22496 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T12:32:31.330+02:00  INFO 22496 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T12:32:31.333+02:00  INFO 22496 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T12:32:31.334+02:00  INFO 22496 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@78f18a87]]
-2026-02-25T12:32:31.334+02:00  INFO 22496 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T12:32:31.340+02:00  INFO 22496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:32:31.344+02:00  INFO 22496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T12:32:31.348+02:00  INFO 22496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-25T12:33:08.823+02:00  INFO 1208 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Starting VeebipoodApplication using Java 24.0.1 with PID 1208 (C:\Users\Admin\koolitused\back-end-01-2026\veebipood\target\classes started by Admin in C:\Users\Admin\koolitused\back-end-01-2026\veebipood)
-2026-02-25T12:33:08.827+02:00  INFO 1208 --- [main] e.mihkel.veebipood.VeebipoodApplication  : The following 1 profile is active: "dev"
-2026-02-25T12:33:09.745+02:00  INFO 1208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-25T12:33:09.800+02:00  INFO 1208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
-2026-02-25T12:33:10.444+02:00  INFO 1208 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-25T12:33:10.457+02:00  INFO 1208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-25T12:33:10.457+02:00  INFO 1208 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-25T12:33:10.508+02:00  INFO 1208 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1622 ms
-2026-02-25T12:33:10.626+02:00  INFO 1208 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-25T12:33:10.678+02:00  INFO 1208 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-25T12:33:11.134+02:00  INFO 1208 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-25T12:33:11.163+02:00  INFO 1208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-25T12:33:11.307+02:00  INFO 1208 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f287a4e
-2026-02-25T12:33:11.308+02:00  INFO 1208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-25T12:33:11.379+02:00  INFO 1208 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/shop]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 16.2
-	Default catalog/schema: shop/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-02-25T12:33:12.448+02:00  INFO 1208 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-25T12:33:12.565+02:00  INFO 1208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T12:33:12.630+02:00  INFO 1208 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-25T12:33:13.079+02:00  WARN 1208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-25T12:33:13.170+02:00  WARN 1208 --- [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 15735d29-e1d5-447a-8f3b-a9332a5bb8e7
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-02-25T12:33:13.180+02:00  INFO 1208 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-02-25T12:33:13.409+02:00  INFO 1208 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-02-25T12:33:13.877+02:00  INFO 1208 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2026-02-25T12:33:13.878+02:00  INFO 1208 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@447cdbaa]]
-2026-02-25T12:33:13.879+02:00  INFO 1208 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2026-02-25T12:33:13.893+02:00  INFO 1208 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-25T12:33:13.904+02:00  INFO 1208 --- [main] e.mihkel.veebipood.VeebipoodApplication  : Started VeebipoodApplication in 5.627 seconds (process running for 6.452)
-2026-02-25T12:33:53.168+02:00  INFO 1208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-25T12:33:53.169+02:00  INFO 1208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-25T12:33:53.173+02:00  INFO 1208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-02-25T12:34:13.879+02:00  INFO 1208 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 0]
-2026-02-25T13:01:14.315+02:00  INFO 1208 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-02-25T13:01:14.321+02:00  INFO 1208 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-02-25T13:01:14.324+02:00  INFO 1208 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2026-02-25T13:01:14.324+02:00  INFO 1208 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@447cdbaa]]
-2026-02-25T13:01:14.324+02:00  INFO 1208 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2026-02-25T13:01:14.329+02:00  INFO 1208 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-25T13:01:14.333+02:00  INFO 1208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-25T13:01:14.334+02:00  INFO 1208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
