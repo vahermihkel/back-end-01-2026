@@ -51,8 +51,8 @@ public class DataLoader implements CommandLineRunner {
         System.out.println(">>> Starting Data Injection...");
 
         // 2. Seed Categories
-        Category electronics = categoryRepository.save(new Category(null, "Electronics"));
-        Category food = categoryRepository.save(new Category(null, "Food"));
+        Category electronics = categoryRepository.save(new Category(null, "Electronics", null, null));
+        Category food = categoryRepository.save(new Category(null, "Food", null, null));
 
         // 3. Seed Products
         Product laptop = productRepository.save(new Product(null, "MacBook", "M3 Chip", 2000.0, true, electronics, "mac.jpg", 5));

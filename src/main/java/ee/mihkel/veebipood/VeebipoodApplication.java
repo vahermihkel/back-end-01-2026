@@ -3,8 +3,12 @@ package ee.mihkel.veebipood;
 import ee.mihkel.veebipood.controller.ProductController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
+@EnableJpaAuditing
 public class VeebipoodApplication {
 
 	public static void main(String[] args) {
@@ -26,8 +30,13 @@ public class VeebipoodApplication {
     //12.K 11.02 - Context: CartSum, Auth. frondis nupud peita. Isik võtta menüüsse.
     //13.E 16.02 - WebSocket
     //14.K 18.02 - Signup. frontend ei saaks backendi päringult parooli + DBs hashimine. frontendi keskkonnad. backis rollid. frondis vastavalt rollile saab midagi teha.
-    //15.K 25.02 serveritesse ülespanek
+    //15.K 25.02 - CRON. cachemine. emaili saatmine. andmebaasis automaatselt kes muutis ja millal muutis.
     //16.R 27.02 ---> 12.00-15.15 HANS
-    //17.T 03.03 CRON. cachemine. emaili saatmine. andmebaasis automaatselt kes muutis ja millal muutis.
+    //17.T 03.03 KOJU. Github nii front-end kui ka back-end eraldi reposse. Docker alla laadida + Redis läbi Dockeri downloadida
+    // serveritesse ülespanek. kodus uus Github teha, 1) kus on puhtalt back-endi asjad, 2) front-endi asjad.
+    // a) andmebaas
+    // b) back-endi
+    // c) front-endi
     //18.T 17.03 - 9.15-10.45
+    // 70ak/h / 4ak/h ---> 17.5
 }

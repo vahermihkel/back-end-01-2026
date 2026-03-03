@@ -32,6 +32,8 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.GET, "/products/*").permitAll()
                 .requestMatchers(HttpMethod.GET, "/categories").permitAll()
                 .requestMatchers(HttpMethod.GET, "/parcelmachines").permitAll()
+                .requestMatchers(HttpMethod.GET, "/supplier1").permitAll()
+                .requestMatchers(HttpMethod.GET, "/supplier2").permitAll()
                 .requestMatchers(HttpMethod.POST, "/login").permitAll()
                 .requestMatchers(HttpMethod.POST, "/signup").permitAll()
                 .requestMatchers(HttpMethod.DELETE, "/products").hasAuthority("ADMIN")

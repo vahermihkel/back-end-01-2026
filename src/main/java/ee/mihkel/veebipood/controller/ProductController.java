@@ -2,6 +2,7 @@ package ee.mihkel.veebipood.controller;
 
 import ee.mihkel.veebipood.entity.Product;
 import ee.mihkel.veebipood.repository.ProductRepository;
+import ee.mihkel.veebipood.service.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
@@ -16,6 +18,9 @@ public class ProductController {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private CacheService cacheService;
 
     // localhost:8080/hi
 //    @GetMapping("hi")
@@ -56,21 +61,24 @@ public class ProductController {
     // RequestParam --> 2 või rohkem URLi muutujat või 1 ja nullable
 
     @DeleteMapping("products/{id}")
-    public List<Product> deleteProduct(@PathVariable Long id){
+    public List<Product> deleteProduct(@PathVariable Long id) throws ExecutionException {
         productRepository.deleteById(id);
+        cacheService.deleteProduct(id);
         return productRepository.findAll();
     }
 
     @GetMapping("products/{id}")
-    public Product getProduct(@PathVariable Long id){
-        return productRepository.findById(id).orElseThrow(()->new RuntimeException("Product not found"));
+    public Product getProduct(@PathVariable Long id) throws ExecutionException {
+        //return productRepository.findById(id).orElseThrow(()->new RuntimeException("Product not found"));
+        return cacheService.getProduct(id);
     }
 
     @PutMapping("products")
-    public Product editProduct(@RequestBody Product product){
+    public Product editProduct(@RequestBody Product product) throws ExecutionException {
         if (product.getId() == null) {
             throw new RuntimeException("Cannot edit product without id");
         }
+        cacheService.updateProduct(product);
         return productRepository.save(product);
     }
 }
