@@ -5,20 +5,18 @@ import ee.mihkel.veebipood.dto.PersonLoginDto;
 import ee.mihkel.veebipood.dto.PersonPublicDto;
 import ee.mihkel.veebipood.dto.PersonSignupDto;
 import ee.mihkel.veebipood.entity.Person;
-import ee.mihkel.veebipood.entity.Role;
 import ee.mihkel.veebipood.model.AuthToken;
 import ee.mihkel.veebipood.repository.PersonRepository;
 import ee.mihkel.veebipood.service.JwtService;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -35,7 +33,8 @@ public class PersonController {
     @Autowired
     private JwtService jwtService;
 
-    private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+    @Autowired
+    private BCryptPasswordEncoder encoder;
 
     @GetMapping("persons")
     public List<PersonDto> findPersons() {
@@ -90,9 +89,26 @@ public class PersonController {
         return mapper.map(dbPerson, PersonDto.class);
     }
 
+    @CachePut(value = "userCache", key = "#person.id")
     @PutMapping("update-profile")
     public PersonDto updateProfile(@RequestBody Person person) {
-        Person dbPerson =  personRepository.save(person);
+        Person dbPerson =  personRepository.findById(person.getId()).orElseThrow();
+        dbPerson.setFirstName(person.getFirstName());
+        dbPerson.setLastName(person.getLastName());
+        if (person.getEmail() != null && !person.getEmail().isBlank()) {
+            dbPerson.setEmail(person.getEmail());
+        }
+        if (person.getPassword() != null && !person.getPassword().isBlank()) {
+            dbPerson.setPassword(encoder.encode(person.getPassword()));
+        }
+        personRepository.save(dbPerson);
+        return mapper.map(dbPerson, PersonDto.class);
+    }
+
+    @Cacheable(value = "userCache", key = "#id")
+    @GetMapping("person/{id}")
+    public PersonDto getPerson(@PathVariable Long id) {
+        Person dbPerson = personRepository.findById(id).orElseThrow();
         return mapper.map(dbPerson, PersonDto.class);
     }
 }

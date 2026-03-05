@@ -46,6 +46,7 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.DELETE, "/categories").hasAuthority("ADMIN")
                 .requestMatchers(HttpMethod.POST, "/categories").hasAuthority("ADMIN")
                 .requestMatchers(HttpMethod.GET, "/persons").hasAuthority("SUPERADMIN")
+                .requestMatchers(HttpMethod.GET, "/person/*").permitAll()
                 .requestMatchers( "/ws/**").permitAll()
                 .anyRequest().authenticated()
         ).addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class); // see annab .authenticated võimaluse

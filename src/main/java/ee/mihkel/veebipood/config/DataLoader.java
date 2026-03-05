@@ -2,7 +2,9 @@ package ee.mihkel.veebipood.config;
 
 import ee.mihkel.veebipood.entity.*;
 import ee.mihkel.veebipood.repository.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -10,6 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
 
 //    @Autowired
@@ -28,16 +31,17 @@ public class DataLoader implements CommandLineRunner {
     private final ProductRepository productRepository;
     private final PersonRepository personRepository;
     private final OrderRepository orderRepository;
+    private final BCryptPasswordEncoder encoder;
 
-    public DataLoader(CategoryRepository categoryRepository,
-                      ProductRepository productRepository,
-                      PersonRepository personRepository,
-                      OrderRepository orderRepository) {
-        this.categoryRepository = categoryRepository;
-        this.productRepository = productRepository;
-        this.personRepository = personRepository;
-        this.orderRepository = orderRepository;
-    }
+//    public DataLoader(CategoryRepository categoryRepository,
+//                      ProductRepository productRepository,
+//                      PersonRepository personRepository,
+//                      OrderRepository orderRepository) {
+//        this.categoryRepository = categoryRepository;
+//        this.productRepository = productRepository;
+//        this.personRepository = personRepository;
+//        this.orderRepository = orderRepository;
+//    }
 
     @Override
     public void run(String... args) throws Exception {
@@ -60,7 +64,7 @@ public class DataLoader implements CommandLineRunner {
 
         // 4. Seed Person (Address is saved automatically via CascadeType.ALL)
         Address adminAddress = new Address(null, "Tallinn", "Rataskaevu", "10123", "1", "Harjumaa", "Estonia");
-        Person admin = new Person(null, "Mihkel", "V", "admin@veebipood.ee", "securePass", Role.SUPERADMIN, adminAddress, null, null, null, null);
+        Person admin = new Person(null, "Mihkel", "V", "admin@veebipood.ee", encoder.encode("securePass"), Role.SUPERADMIN, adminAddress, null, null, null);
         admin = personRepository.save(admin);
 
         // 5. Seed an Initial Order
